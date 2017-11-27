@@ -1,18 +1,181 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+
+<head>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Mastering DevTools</h1>
+				<h2>Tricks for Front End Development</h2>
+				<h3>15min Lightning Talk</h3>
+			</section>
+
+			<section>
+				<h2>What are DevTools?</h2>
+				<blockquote>"The Chrome Developer Tools (DevTools for short), are a set of web authoring and debugging tools built into Google Chrome."</blockquote>
+			</section>
+
+			<section>
+				<h3>Pre-requisites</h3>
+				<ul>
+					<li>Chrome Canary (<a href="https://www.google.com/chrome/browser/canary.html" target="_blank">click to download</a>)</li>
+					<li>DevTools Experiments (<a href="https://hackernoon.com/hidden-experimental-features-in-chrome-devtools-2ae93b11b628"
+						 target="_blank">instructions</a>)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>CSS Dom Search</h1>
+			</section>
+
+			<section>
+				<h2>CSS Dom Search</h2>
+				<p>This is a handy trick to quickly find the DOM nodes you need. In the Elements Panel, press Cmd + F (Ctrl + F on Windows)
+					to open the search box.</p>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/search.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<h1>Design Mode</h1>
+			</section>
+
+			<section>
+				<h3>Design Mode</h3>
+				<p>This can help us test our design without editing the content manually in the source code.</p>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/designmode.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<h1>Time to Paint</h1>
+			</section>
+
+			<section>
+				<h2>Time to Paint</h2>
+				<p>This feature captures screenshots every few seconds to illustrate page load times.</p>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/loadtime.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<h1>Auditing Tools</h1>
+			</section>
+
+			<section>
+				<h2>Auditing Tools</h2>
+				<ul>
+					<li>Powered by Lighthouse</li>
+					<li>Click the "Audits" panel and select the + sign in the top left corner</li>
+					<li>Shows scores for the following categories:
+						<ul>
+							<li>Progressive Web App</li>
+							<li>Accessibility</li>
+							<li>Best Practices</li>
+							<li>Performance</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/audit.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<img src="files/audit-img.png" height="500">
+			</section>
+
+			<section>
+				<h2>Auditing Tools</h2>
+				<ul>
+					<li>Why the audit is important?</li>
+					<li>How to pass the audit</li>
+					<li>How the audit is implemented</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>Hide Elements Quickly</h1>
+			</section>
+
+			<section>
+				<h3>Hide Elements Quickly</h3>
+				<p>Sometimes we need to hide elements in our design to check how it will look without them. Chrome DevTools give us the
+					ability to inspect an element and type <code>h</code> from the keyboard to hide it by toggling CSS visibility property.</p>
+			</section>
+
+			<section>
+				<h3>Demo</h3>
+			</section>
+
+			<section>
+				<h1>CSS Diff</h1>
+			</section>
+
+			<section>
+				<h2>CSS Diff</h2>
+				<p>Wouldn't it be nice to save your CSS in the browser?</p>
+				<p>With Canary DevTools experiments, you can use the <i>Changes</i> panel to see a visual difference, similar to GitHub</p>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/changes.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<h1>CSS Coverage</h1>
+			</section>
+
+			<section>
+				<h3>CSS Coverage</h3>
+				<p>In Canary DevTools experiments, you can use the <i>Coverage</i> panel to track unused CSS/JS.</p>
+			</section>
+
+			<section>
+				<video height="500" controls>
+					<source src="files/coverage.mov" type="video/mp4">Your browser does not support the video tag.
+				</video>
+			</section>
+
+			<section>
+				<img src="files/coverage-js.png" height="500">
+			</section>
+
+			<section>
+				<h1>That's all folks!</h1>
+			</section>
+
+			<section>
+				<h1>Thank you</h1>
+				<h2>-Angela Damaso</h2>
+			</section>
 		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			Reveal.initialize();
-		</script>
-	</body>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		Reveal.initialize();
+	</script>
+</body>
+
 </html>
